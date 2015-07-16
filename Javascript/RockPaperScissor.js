@@ -15,6 +15,7 @@ else(computerChoice>=0.67 && computerChoice<=1)
 }
 compare(userChoice,computerChoice);
 function compare(choice1, choice2){
+    
     if(choice1 === choice2)
     return "The result is a tie!";
     
@@ -34,9 +35,54 @@ function compare(choice1, choice2){
 }
 
 //for loop syntex
-//for(var i="0";i<text.length;i++)//no length()
+//for(var i="0";i<text.length;i++)//no length(), i=0 not ok do i="0"
+
+//empty array var i=[];
 
 //var slaying = true;
 //while(slaying)
 
+//var smart = prompt("Are you smart?").toUpperCase();
 
+//switch(troll) {
+  //  case 'FIGHT':
+    // break;
+     //case 'PAY':
+     // break;
+     // default:
+     // console.log("I didn't understand your choice. Hit Run and try again, this time picking FIGHT, PAY, or RUN!");
+ // }
+
+
+// create obj
+var friend={};
+friend.megha={
+name : "megha",
+lastname : "Desai",
+address : ['IIM Road','Ahmedabad','29881']
+};
+
+friend.Aarohi={
+    name : "Aarohi",
+    lastname : "Oza",
+    address : ['Thaltej Road', 'Ahmedabad','23455']
+};
+
+var list=function(obj){
+    for(var temp in obj)
+        console.log(temp);
+}
+};
+
+var search=function(name){
+    for (var temp in friend)
+    {
+        if(friend[temp].name===name){
+            console.log(friends[temp]);
+      return friends[temp];
+        }
+    }
+}
+
+list(friend);
+search("Aarohi");
