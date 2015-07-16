@@ -33,3 +33,10 @@ function compare(choice1, choice2){
     }
 }
 
+//for loop syntex
+//for(var i="0";i<text.length;i++)//no length()
+
+//var slaying = true;
+//while(slaying)
+
+
