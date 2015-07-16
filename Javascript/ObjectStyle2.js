@@ -21,11 +21,11 @@ var search=function(name){
     for (var temp in friend)
     {
         if(friend[temp].name===name){
-            console.log(friends[temp]);
-      return friends[temp];
+            console.log(friend[temp]);
+      return friend[temp];
         }
     }
-};
+}
 
 list(friend);
 search("Aarohi");
